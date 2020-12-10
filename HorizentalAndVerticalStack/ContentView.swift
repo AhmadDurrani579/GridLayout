@@ -9,18 +9,23 @@ import SwiftUI
 
 struct ContentView: View {
     @State var gridLayout: [GridItem] = [GridItem()]
+    fileprivate func buildCell(_ photo: Photo) -> some View {
+        print(photo.name)
+        return Image(photo.name)
+            .resizable()
+            .scaledToFill()
+            .frame(minWidth: 0, maxWidth: .infinity)
+            .frame(height: gridLayout.count == 1 ? 200 : 100)
+            .cornerRadius(20)
+            .shadow(color: Color.primary.opacity(0.3), radius: 1)
+    }
+    
     var body: some View {
         NavigationView {
             ScrollView(.vertical) {
                 LazyVGrid(columns: gridLayout, alignment: .center, spacing: 10) {
-                    ForEach(samplePhotos.indices) { index in
-                        Image(samplePhotos[index].name)
-                            .resizable()
-                            .scaledToFill()
-                            .frame(minWidth: 0, maxWidth: .infinity)
-                            .frame(height: gridLayout.count == 1 ? 200 : 100)
-                            .cornerRadius(20)
-                            .shadow(color: Color.primary.opacity(0.3), radius: 1)
+                    ForEach(samplePhotos) { photo in
+                        buildCell(photo)
                     }
                     
                 }.padding(.all , 10)
@@ -51,11 +56,11 @@ struct ContentView_Previews: PreviewProvider {
 }
 
 struct Photo: Identifiable {
-    var id = UUID()
-    var name: String
+    let id = UUID()
+    let name: String
 }
 
-let samplePhotos = (1...20).map {
-    Photo.init(name: "coffee-\($0)")
+let samplePhotos = (1...300).map {
+    Photo.init(name: "coffee-\($0%300)")
 }
 
