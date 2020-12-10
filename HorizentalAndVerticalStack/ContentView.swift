@@ -13,8 +13,9 @@ struct ContentView: View {
         NavigationView {
             ScrollView(.vertical) {
                 LazyVGrid(columns: gridLayout, alignment: .center, spacing: 10) {
-                    ForEach(samplePhotos.indices) { index in
-                        Image(samplePhotos[index].name)
+                    
+                    ForEach(samplePhotos) { index in
+                            Image(index.name)
                             .resizable()
                             .scaledToFill()
                             .frame(minWidth: 0, maxWidth: .infinity)
@@ -50,7 +51,7 @@ struct ContentView_Previews: PreviewProvider {
     }
 }
 
-struct Photo: Identifiable {
+struct Photo: Identifiable , Hashable {
     var id = UUID()
     var name: String
 }

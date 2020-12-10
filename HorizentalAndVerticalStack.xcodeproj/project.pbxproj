@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		410C09AD25821EB1006E6EC7 /* Cafe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 410C09AC25821EB1006E6EC7 /* Cafe.swift */; };
+		410C09B025822061006E6EC7 /* MultiGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 410C09AF25822061006E6EC7 /* MultiGridView.swift */; };
+		410C09B325822FA6006E6EC7 /* cafsss.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 410C09B225822FA6006E6EC7 /* cafsss.jpg */; };
 		41E0B8DC257F65F10023B421 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41E0B8DB257F65F10023B421 /* AppDelegate.swift */; };
 		41E0B8DE257F65F10023B421 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41E0B8DD257F65F10023B421 /* SceneDelegate.swift */; };
 		41E0B8E0257F65F10023B421 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41E0B8DF257F65F10023B421 /* ContentView.swift */; };
@@ -17,6 +20,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		410C09AC25821EB1006E6EC7 /* Cafe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cafe.swift; sourceTree = "<group>"; };
+		410C09AF25822061006E6EC7 /* MultiGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiGridView.swift; sourceTree = "<group>"; };
+		410C09B225822FA6006E6EC7 /* cafsss.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = cafsss.jpg; sourceTree = "<group>"; };
 		41E0B8D8257F65F10023B421 /* HorizentalAndVerticalStack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HorizentalAndVerticalStack.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		41E0B8DB257F65F10023B421 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		41E0B8DD257F65F10023B421 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -61,11 +67,14 @@
 				41E0B8DB257F65F10023B421 /* AppDelegate.swift */,
 				41E0B8DD257F65F10023B421 /* SceneDelegate.swift */,
 				41E0B8DF257F65F10023B421 /* ContentView.swift */,
+				410C09B225822FA6006E6EC7 /* cafsss.jpg */,
 				41E0B8E4257F65F10023B421 /* Assets.xcassets */,
 				41E0B8E9257F65F10023B421 /* LaunchScreen.storyboard */,
 				41E0B8EC257F65F10023B421 /* Info.plist */,
 				41E0B8E1257F65F10023B421 /* HorizentalAndVerticalStack.xcdatamodeld */,
 				41E0B8E6257F65F10023B421 /* Preview Content */,
+				410C09AC25821EB1006E6EC7 /* Cafe.swift */,
+				410C09AF25822061006E6EC7 /* MultiGridView.swift */,
 			);
 			path = HorizentalAndVerticalStack;
 			sourceTree = "<group>";
@@ -135,6 +144,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				410C09B325822FA6006E6EC7 /* cafsss.jpg in Resources */,
 				41E0B8EB257F65F10023B421 /* LaunchScreen.storyboard in Resources */,
 				41E0B8E8257F65F10023B421 /* Preview Assets.xcassets in Resources */,
 				41E0B8E5257F65F10023B421 /* Assets.xcassets in Resources */,
@@ -148,9 +158,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				410C09B025822061006E6EC7 /* MultiGridView.swift in Sources */,
 				41E0B8DC257F65F10023B421 /* AppDelegate.swift in Sources */,
 				41E0B8DE257F65F10023B421 /* SceneDelegate.swift in Sources */,
 				41E0B8E3257F65F10023B421 /* HorizentalAndVerticalStack.xcdatamodeld in Sources */,
+				410C09AD25821EB1006E6EC7 /* Cafe.swift in Sources */,
 				41E0B8E0257F65F10023B421 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -295,6 +307,7 @@
 				DEVELOPMENT_TEAM = 87WTB46Z29;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = HorizentalAndVerticalStack/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -316,6 +329,7 @@
 				DEVELOPMENT_TEAM = 87WTB46Z29;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = HorizentalAndVerticalStack/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
